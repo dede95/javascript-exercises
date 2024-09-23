@@ -1,10 +1,15 @@
 const repeatString = function(string, num) {
     let longString = ""
-    for (let i = 0; i < num; i++) {
-        longString = longString.concat(string)
+    if (num > 0 ){
+        for (let i = 0; i < num; i++) {
+            longString = longString.concat(string)
+        }
+    
+        return longString
+    } else {
+        return "ERROR"
     }
-
-    return longString
+    
 
 };
 
